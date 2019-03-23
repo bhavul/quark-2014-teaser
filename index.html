@@ -1,0 +1,1288 @@
+<!DOCTYPE>
+<html>
+	<head>
+
+		
+		 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+		<script type="text/javascript" src="jquery.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+		<link rel="stylesheet" type="text/css" href="style1.css" />
+
+		<link href='http://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+
+
+
+<!-- rgb(16, 46, 55)
+ -->
+
+ <!-- two is the first block that comes from the bottom and changes color n all. that div -->
+
+	 	<style>
+
+			#two {
+				
+				-skrollr-animation-name:animationtwo;
+			}
+
+			@-skrollr-keyframes animationtwo {
+				
+
+				0 {
+					top:150%;
+					opacity: 1;
+					background-color: rgb(0, 0, 0);
+				}
+
+				100p {
+					top:50%;
+					opacity: 1;
+					background-color: rgb(16, 46, 55);
+				}
+
+				200p{
+					background-color: rgb(16, 46, 55);		
+				}
+
+				400p {
+					background-color: rgb(3, 132, 192);
+
+
+
+				}
+
+				
+
+
+			}
+
+			#logo {
+				-skrollr-animation-name : animationLogo;
+			}
+
+			@-skrollr-keyframes animationLogo{
+				0{
+					transform:rotate(-180deg) scale(0.5);
+					
+				}
+
+				100p{
+					transform:rotate(0deg) scale(1);
+					
+				}
+
+				
+			}
+
+			#tagline {
+				-skrollr-animation-name:animationP;
+			}
+
+			@-skrollr-keyframes animationP {
+				100p {
+					opacity: 0;
+					
+				}
+
+				200p {
+					opacity: 1;
+					transform: rotateY(170deg) rotateX(110deg) rotate(20deg);
+					
+				}
+
+				400p {
+					transform:rotateY(0deg) rotateX(0deg) rotate(0deg);
+					text-shadow:0 0 10px #333;
+				}
+				600p {
+					
+				}
+
+			}
+
+			#topnav ul{
+				-skrollr-animation-name:animationMainNav;
+			}
+
+			@-skrollr-keyframes animationMainNav{
+				0{
+					top:-10%;
+					position: fixed;
+				}
+
+				100p{
+					top:0%;
+					position: fixed;
+					box-shadow:0 1px 0 rgb(9, 121, 173);
+				}
+
+				400p {
+					top: 0%;
+					position: fixed;
+				}
+
+				500p{
+					background-color: rgba(13, 39, 38, 0.7);
+					
+				}
+
+				600p {
+					background-color: rgba(0, 74, 108, 1);
+					box-shadow:0 10px 0 rgb(9, 121, 173);
+
+				}
+				1200p{
+					background-color: rgba(0, 74, 108, 1);
+					box-shadow:0 10px 0 rgb(9, 121, 173);
+				}
+				1900p{
+					background-color: rgba(0, 0, 0, 0.7);
+					box-shadow:0 1px 0 rgb(9, 121, 173);
+				}
+
+
+
+				
+			}
+
+
+			#panel-nav ul {
+				-skrollr-animation-name:animationPanelNav;
+			}
+
+			@-skrollr-keyframes animationPanelNav{
+				600p{
+					right:-100px;
+				}
+				700p{
+					right:-100px;
+				}
+			}
+
+			.grass-front {
+				-skrollr-animation-name:animationGrassF;
+			}
+
+			@-skrollr-keyframes animationGrassF {
+				750p{
+					bottom:-900px;
+				}
+				900p {
+					bottom:-575px;
+				}
+				1200p{
+					background-color:rgb(11, 148, 70);
+				}
+				1900p{
+					background-color: rgb(11, 20, 43);
+				}
+			}
+
+			.grass-back {
+				-skrollr-animation-name:animationGrassB;
+			}
+
+			@-skrollr-keyframes animationGrassB {
+				600p{
+					bottom:-500px;	
+				}
+				900p{
+					bottom:-180px;
+				}
+				1200p{
+					background-color:rgb(6, 105, 61);
+				}
+				1900p{
+					background-color:rgb(4, 7, 24);
+				}
+			}
+
+			.branch {
+				-skrollr-animation-name:animationBranch;
+			}
+
+			@-skrollr-keyframes animationBranch{
+				900p{
+					height:0px;
+					opacity: 1;
+				}
+				1000p{
+					height:170px;
+					opacity: 1;
+				}
+				1550p{
+					opacity: 1;
+				}
+				1700p{
+					opacity: 0;
+				}
+			}
+			
+			.leaves{
+				-skrollr-animation-name:animationLeaves;
+			}
+
+			@-skrollr-keyframes animationLeaves{
+				950p{
+					-webkit-transform:scale(0.001);
+					transform:scale(0.001);
+					opacity: 1;
+				}
+				1000p{
+					-webkit-transform:scale(1.1);
+					transform:scale(1.1);
+					opacity: 1;
+				}
+				1550p{
+					opacity: 1;
+				}
+				1700p{
+					opacity: 0;
+				}
+			}
+
+			#newton{
+				-skrollr-animation-name:animationNewton;
+			}
+
+			@-skrollr-keyframes animationNewton{
+				1000p{
+					opacity: 0;
+				}
+				1200p{
+					opacity: 0.95;
+				}
+				1300p{
+					opacity: 0.95;
+					-webkit-transform:scale(0.4);
+					transform:scale(0.4);
+				}
+				1450p{
+					-webkit-transform:scale(0.7);
+					transform:scale(0.7);
+					opacity: 0;
+					right: 56px;
+				}
+				2000p{
+					-webkit-transform:scale(0.7);
+					transform:scale(0.7);
+					opacity: 0;
+					right: 56px;
+					bottom:-41px;
+				}
+				2300p{
+					opacity: 1;
+					right: 280px;
+					-webkit-transform:scale(0.4);
+					transform:scale(0.4);
+					bottom:-70px;
+				}
+				2400p{
+					opacity: 0;
+				}
+			}
+
+			#apple{
+				-skrollr-animation-name:animationApple;
+			}
+
+			@-skrollr-keyframes animationApple{
+				1000p{
+					opacity: 0;
+				}
+				1200p{
+					opacity: 1;
+					bottom:215px;
+				}
+				1300p{
+					bottom:150px;
+				}
+				1400p{
+					bottom: 61px;
+				}
+				1750p{
+					opacity: 0;
+				}
+			}
+
+			#newton2{
+				-skrollr-animation-name:animationNew2;
+			}
+
+			@-skrollr-keyframes animationNew2{
+				1300p{
+					opacity: 0;
+				}
+				1450p{
+					opacity: 0.95;
+					-webkit-transform: scale(0.6);
+					transform: scale(0.6);
+				}
+				1600p{
+					opacity: 0;
+					-webkit-transform: scale(0.8);
+					transform: scale(0.8);
+					right: 181px;
+				}
+				2000p{
+					opacity: 0;
+					-webkit-transform: scale(0.8);
+					transform: scale(0.8);
+					right: 181px;
+					bottom:-25px;
+				}
+				2300p{
+					opacity: 1;
+					right: 380px;
+					-webkit-transform: scale(0.6);
+					transform: scale(0.6);
+					bottom:-35px;
+				}
+				2400p{
+					opacity: 0;
+				}
+			}
+
+			#newton3{
+				-skrollr-animation-name:animationNew3;
+			}
+
+			@-skrollr-keyframes animationNew3{
+				1450p{
+					opacity: 0;
+				}
+				1600p{
+					opacity: 1;
+					-webkit-transform: scale(0.19);
+					transform: scale(0.19);
+				}
+				1750p{
+					opacity: 0;
+					-webkit-transform: scale(0.22);
+					transform: scale(0.22);
+				}
+				2000p{
+					opacity: 0;
+					-webkit-transform: scale(0.22);
+					transform: scale(0.22);
+				}
+				2300p{
+					opacity: 1;
+					-webkit-transform: scale(0.19);
+					transform: scale(0.19);
+				}
+				2400p{
+					opacity: 0;
+				}
+			}
+
+			#newton4{
+				-skrollr-animation-name:animationNew4;
+			}
+
+			@-skrollr-keyframes animationNew4{
+				1600p{
+					opacity: 0;
+				}
+				1750p{
+					opacity: 1;
+					-webkit-transform: scale(0.38);
+					transform: scale(0.38);
+				}
+				1900p{
+					opacity: 0;
+					-webkit-transform: scale(0.42);
+					transform: scale(0.42);
+					right: 961px;
+				}
+				2000p{
+					opacity: 0;
+					-webkit-transform: scale(0.42);
+					transform: scale(0.42);
+					right: 961px;
+				}
+				2300p{
+					opacity: 1;
+					right: 725px;
+					-webkit-transform: scale(0.38);
+					transform: scale(0.38);
+				}
+				2400p{
+					opacity: 0;
+				}
+			}
+
+			#three {
+				-skrollr-animation-name:animationThree;
+			}
+
+			@-skrollr-keyframes animationThree {
+				1200p {		
+					background: linear-gradient(288deg, rgb(203, 235, 255), rgb(161, 219, 255));
+				}
+
+				1700p{
+					background: linear-gradient(288deg, rgb(255, 119, 0), rgb(178, 197, 58));
+				}
+
+				2300p{
+					background: linear-gradient(288.72deg, rgb(0, 98, 255), rgb(83, 25, 230));
+				}
+			}
+			
+
+			#real-logo{
+				-skrollr-animation-name:animationLogo2;
+			}
+
+			@-skrollr-keyframes animationLogo2{
+				1600p{
+					opacity: 1;
+				}
+				1900p{
+					opacity: 0;
+				}
+			}
+
+			#real-logo2{
+				-skrollr-animation-name:animationLogo3;
+			}
+
+			@-skrollr-keyframes animationLogo3{
+				1600p{
+					opacity: 0;
+				}
+				1900p{
+					opacity: 1;
+				}
+			}
+
+			#TLast-year{
+				-skrollr-animation-name:animationLY;
+			}
+
+			@-skrollr-keyframes animationLY{
+				0{
+					opacity: 0;
+				}
+				25p{
+					opacity: 1;
+				}
+				100p{
+					opacity: 1;
+				}
+				150p{
+					opacity: 0;
+				}
+			}
+
+			#TExperienced{
+				-skrollr-animation-name:animationExp;
+			}
+
+			@-skrollr-keyframes animationExp{
+				25p{
+					opacity: 0;
+				}
+				40p{
+					opacity: 1;
+				}
+				100p{
+					opacity: 1;
+				}
+				150p{
+					opacity: 0;
+				}
+			}
+
+			#TQLeap{
+				-skrollr-animation-name:animationQL;
+			}
+
+			@-skrollr-keyframes animationQL{
+				50p{
+					opacity: 0;
+				}
+				100p{
+					opacity: 1;
+				}
+				300p{
+					opacity: 0;
+				}
+			}
+
+			#TThis-year{
+				-skrollr-animation-name:animationThYr;
+			}
+
+			@-skrollr-keyframes animationThYr{
+				50p{
+					opacity: 0;
+				}
+				100p{
+					opacity: 1;
+				}
+				400p{
+					opacity: 1;
+				}
+				700p{
+					opacity: 0;
+				}
+			}
+
+
+			#Tlet{
+				-skrollr-animation-name:animationLet;
+			}
+
+			@-skrollr-keyframes animationLet{
+				500p{
+					opacity: !0;
+				}
+				600p{
+					opacity: !1;
+				}
+				1000p{
+					opacity: !0;
+				}
+			}
+
+			#TNewtons{
+				-skrollr-animation-name:animationNewtons;
+			}
+
+			@-skrollr-keyframes animationNewtons{
+				600p{
+					opacity: !0;
+				}
+				650p{
+					opacity: !1;
+				}
+				1050p{
+					opacity: !0;
+				}
+			}
+
+
+			#TApple{
+				-skrollr-animation-name:animationApp;
+			}
+
+			@-skrollr-keyframes animationApp{
+				650p{
+					opacity: !0;
+				}
+				700p{
+					opacity: !1;
+				}
+				1100p{
+					opacity: !0;
+				}
+			}
+
+			#TFall{
+				-skrollr-animation-name:animationFall;
+			}
+
+			@-skrollr-keyframes animationFall{
+				700p{
+					opacity: !0;
+				}
+				750p{
+					opacity: !1;
+				}
+				1150p{
+					opacity: !0;
+				}
+			}
+
+			#TOn{
+				-skrollr-animation-name:animationOn;
+			}
+
+			@-skrollr-keyframes animationOn{
+				750p{
+					opacity: !0;
+				}
+				800p{
+					opacity: !1;
+				}
+				1200p{
+					opacity: !0;
+				}
+			}
+
+			#TYou{
+				-skrollr-animation-name:animationYou;
+			}
+
+			@-skrollr-keyframes animationYou{
+				800p{
+					opacity: !0;
+				}
+				850p{
+					opacity: !1;
+				}
+				1250p{
+					opacity: !0;
+				}
+			}
+
+			#TThis-time{
+				-skrollr-animation-name:animationTT1;
+			}
+
+			@-skrollr-keyframes animationTT1{
+				1200p{
+					opacity: !0;
+				}
+				1300p{
+					opacity: !1;
+				}
+				1400p{
+					opacity: !0;
+				}
+			}
+
+
+			#TThink{
+				-skrollr-animation-name:animationThink;
+			}
+
+			@-skrollr-keyframes animationThink{
+				1325p{
+					position: relative;
+					opacity: 0;
+					transform:rotate(0deg);
+					-webkit-transform:rotate(0deg);
+				}
+				1350p{
+					position: relative;
+					opacity: 1;
+					transform:rotate(-10deg);
+					-webkit-transform:rotate(-10deg);
+				}
+				1450p{
+					opacity: 1;
+				}
+				1525p{
+					opacity: 0;
+				}	
+			}
+
+			#TThe{
+				-skrollr-animation-name:animationThe;
+			}
+
+			@-skrollr-keyframes animationThe{
+				1400p{
+					opacity: !0;
+				}
+				1455p{
+					opacity: !1;
+				}
+				1510p{
+					opacity: !0;
+				}
+			}
+
+			#TUnthinkable{
+				-skrollr-animation-name:animationTUn;
+			}
+
+			@-skrollr-keyframes animationTUn{
+				1450p{
+					opacity: 0;
+					transform:rotate(0deg);
+					-webkit-transform:rotate(0deg);
+				}
+				1500p{
+					opacity: 1;
+					transform:rotate(8deg);
+					-webkit-transform:rotate(8deg);
+				}
+				1550p{
+					opacity: 0;
+				}
+			}
+
+
+			#TIdeate{
+				-skrollr-animation-name:animationIdea;
+			}
+
+			@-skrollr-keyframes animationIdea{
+				1500p{
+					transform:scale(0.5);
+					-webkit-transform:scale(0.5);
+					opacity: 0;
+				}
+				1600p{
+					transform:scale(1);
+					-webkit-transform:scale(1);
+					opacity: 1;
+				}
+				1650p{
+					opacity: 1;
+					transform:scale(1);
+					-webkit-transform:scale(1);
+				}
+				1750p{
+					transform:scale(1.5);
+					-webkit-transform:scale(1.5);
+					opacity: 0;
+				}
+			}
+
+
+			#TSomething{
+				-skrollr-animation-name:animationSth;
+			}
+
+			@-skrollr-keyframes animationSth{
+				1500p{
+					transform:scale(0.5);
+					-webkit-transform:scale(0.5);
+					opacity: 0;
+				}
+				1600p{
+					transform:scale(1);
+					-webkit-transform:scale(1);
+					opacity: 1;
+				}
+				1650p{
+					opacity: 1;
+					transform:scale(1);
+					-webkit-transform:scale(1);
+				}
+				1750p{
+					transform:scale(1.5);
+					-webkit-transform:scale(1.5);
+					opacity: 0;
+				}
+			}
+
+			#TUnknown{
+				-skrollr-animation-name:animationUnknown;
+			}
+
+			@-skrollr-keyframes animationUnknown{
+				1500p{
+					transform:scale(0.5);
+					-webkit-transform:scale(0.5);
+					opacity: 0;
+				}
+				1600p{
+					transform:scale(1);
+					-webkit-transform:scale(1);
+					opacity: 1;
+				}
+				1650p{
+					opacity: 1;
+					transform:scale(1);
+					-webkit-transform:scale(1);
+				}
+				1700p{
+					transform:scale(1.5);
+					-webkit-transform:scale(1.5);
+					opacity: 0;
+				}
+			}
+
+
+			#TFormulate{
+				-skrollr-animation-name:animationFormulate;
+			}
+
+			@-skrollr-keyframes animationFormulate{
+				1690p{
+					opacity: !0;
+				}
+				1720p{
+					opacity: !1;
+				}
+				1825p{
+					opacity: !0;
+				}
+			}
+
+			#TYour{
+				-skrollr-animation-name:animationYour;
+			}
+
+			@-skrollr-keyframes animationYour{
+				1700p{
+					opacity: !0;
+				}
+				1735p{
+					opacity: !1;
+				}
+				1850p{
+					opacity: !0;
+				}
+			}
+
+			#TOwn{
+				-skrollr-animation-name:animationOwn;
+			}
+
+			@-skrollr-keyframes animationOwn{
+				1725p{
+					opacity: !0;
+				}
+				1750p{
+					opacity: !1;
+				}
+				1875p{
+					opacity: !0;
+				}
+			}
+
+			#TWorld{
+				-skrollr-animation-name:animationWorld;
+			}
+
+			@-skrollr-keyframes animationWorld{
+				1750p{
+					opacity: !0;
+				}
+				1775p{
+					opacity: !1;
+				}
+				1900p{
+					opacity: !0;
+				}
+			}
+
+
+			#TThis-time2{
+				-skrollr-animation-name:animationTT2;
+			}
+
+			@-skrollr-keyframes animationTT2{
+				1900p{
+					opacity: 0;
+				}
+				1940p{
+					opacity: 1;
+				}
+				2200p{
+					opacity: 1;
+				}
+				2300p{
+					opacity: 0;
+				}
+			}
+
+
+			#TEvolute{
+				-skrollr-animation-name:animationEvol;
+			}
+
+			@-skrollr-keyframes animationEvol{
+				1940p{
+					opacity: 0;
+				}
+				1980p{
+					opacity: 1;
+				}
+				2200p{
+					opacity: 1;
+				}
+				2300p{
+					opacity: 0;
+				}
+			}
+
+			#TThrough{
+				-skrollr-animation-name:animationTThru;
+			}
+
+			@-skrollr-keyframes animationTThru{
+				1980p{
+					opacity: 0;
+				}
+				2020p{
+					opacity: 1;
+				}
+				2200p{
+					opacity: 1;
+				}
+				2300p{
+					opacity: 0;
+				}
+			}
+
+			#TYour2{
+				-skrollr-animation-name:animationTYour2;
+			}
+
+			@-skrollr-keyframes animationTYour2{
+				2020p{
+					opacity: 0;
+				}
+				2060p{
+					opacity: 1;
+				}
+				2200p{
+					opacity: 1;
+				}
+				2300p{
+					opacity: 0;
+				}
+			}
+
+			#TIdeas{
+				-skrollr-animation-name:animationTIdeas;
+			}
+
+			@-skrollr-keyframes animationTIdeas{
+				2060p{
+					opacity: 0;
+				}
+				2100p{
+					opacity: 1;
+				}
+				2200p{
+					opacity: 1;
+				}
+				2300p{
+					opacity: 0;
+				}
+			}
+
+			#newton5{
+				-skrollr-animation-name:animationNew5;
+			}
+
+			@-skrollr-keyframes animationNew5{
+				2300p{
+					opacity: 0;
+					transform:scale(0.2);
+					bottom: -600px;
+				}
+				2600p{
+					opacity: 0.5;
+					transform:scale(0.35);
+					bottom: -225px;
+				}
+			}
+
+
+			#TThis-time3{
+				-skrollr-animation-name:animationTT3;
+			}
+
+			@-skrollr-keyframes animationTT3{
+				2300p{
+					opacity: 0;
+				}
+				2400p{
+					opacity: 1;
+				}
+				2550p{
+					opacity: 0;
+				}
+			}
+
+
+			#TCatch{
+				-skrollr-animation-name:animationCatch;
+			}
+
+			@-skrollr-keyframes animationCatch{
+				2350p{
+					opacity: 0;
+				}
+				2450p{
+					opacity: 1;
+				}
+				2600p{
+					opacity: 1;
+				}
+				2700p{
+					opacity: 0;
+				}
+
+			}
+
+			#TAnd{
+				-skrollr-animation-name:animationAnd;
+			}
+
+			@-skrollr-keyframes animationAnd{
+				2450p{
+					opacity: 0;
+				}
+				2475p{
+					opacity: 1;
+				}
+				2725p{
+					opacity: 0;
+				}
+			}
+
+			#TGo{
+				-skrollr-animation-name:animationGo;
+			}
+
+			@-skrollr-keyframes animationGo{
+				2475p{
+					opacity: 0;
+				}
+				2500p{
+					opacity: 1;
+				}
+				2750p{
+					opacity: 0;
+				}
+			}
+
+
+			#beyond{
+				-skrollr-animation-name:animationBeyond;
+			}
+
+			@-skrollr-keyframes animationBeyond{
+				2500p{
+					opacity: 0;
+					-webkit-transform:scale(1.75) rotateX(540deg);
+				}
+				2800p{
+					opacity: 1;
+					-webkit-transform:scale(0.75) rotateX(0deg);
+				}
+
+			}
+
+			#Credits{
+				-skrollr-animation-name:animationCredits;
+			}
+
+			@-skrollr-keyframes animationCredits{
+				2700p{
+					opacity: 0;
+				}
+				2800p{
+					opacity: 1;
+				}
+			}
+
+			#team{
+				-skrollr-animation-name:animationTeam;
+			}
+
+			@-skrollr-keyframes animationTeam{
+				2700p{
+					opacity: 0;
+				}
+				2800p{
+					opacity: 1;
+				}
+			}
+
+			#team-name{
+				-skrollr-animation-name:animationTeamName;
+			}
+
+			@-skrollr-keyframes animationTeamName{
+				2700p{
+					opacity: 0;
+				}
+				2800p{
+					opacity: 0.8;
+				}
+			}
+
+			#Tscroll-down{
+				-skrollr-animation-name:animationScrollDown;
+			}
+
+			@-skrollr-keyframes animationScrollDown{
+				0p{
+					opacity: 1;
+				}
+				100p{
+					opacity: 0;
+				}
+			}
+
+
+
+
+
+	 	</style>
+
+	
+
+
+		<script type="text/javascript" src="parallax.js"></script>
+		<script type="text/javascript" src="homepage.js"></script>
+
+	</head>
+
+	<body>
+
+
+		<div id="one"> </div>
+		<div id="two"> </div>
+		<div id="three"> </div>
+		
+
+		<img src="images/quark-logo-new2.png" id="real-logo">
+		<img src="images/quark-logo-new3.png" id="real-logo2">
+		<img src="images/beyond-white.png" id="beyond">
+		
+		<div id="logo-wrap"><img src="images/logo.png" id="logo"> </div>
+
+
+		<nav id="topnav">
+		<ul> 
+			<li><a href="#">register</a></li>
+			<li><a href="#">accomodation</a></li>
+			<li><a href="#">events</a></li>
+			<li><a href="#">workshop</a></li>
+			<li><a href="#">red</a></li>
+			<li><a href="#">organizing team</a></li>
+		</ul>
+		</nav>
+
+
+		<!--  Event Nav Bar ( to be added )	-->
+
+		<div id="panel-nav"> 
+
+			<ul>
+
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+
+			</ul>
+
+
+
+		</div>
+
+
+		<!-- grass -->
+
+		<div id="g1" class="grass-front"> 	</div>
+		<div id="g2" class="grass-front"> 	</div>
+
+		<div id="g3" class="grass-back"> </div>
+		<div id="g4" class="grass-back"> </div>
+		 
+		<!-- TREE -->
+
+		<div class="branch"></div>
+		<div class="leaves"> </div>
+		
+
+		<!-- figures -->
+		<div id="newton"><img src="images/newton-sit.png"></div>
+		<div id="newton2"><img src="images/look-down.png"></div>
+		<div id="newton3"><img src="images/think.png"></div>
+		<div id="newton4"><img src="images/thesis.png"></div>
+		<div id="newton5"><img src="images/victory.png"></div>
+		
+		
+		<!-- apple -->
+		<div id="apple">
+		</div>
+
+
+		<!-- TEXT TEXT -->
+		<div id="text">
+
+					<p id="Tscroll-down"> Scroll down to let it roll! </p>
+
+
+		<p id="TLast-year">LAST YEAR</p>
+		<p id="TExperienced">YOU EXPERIENCED A</p>
+		<p id="TQLeap">QUANTUM LEAP</p>
+		<p id="TThis-year">THIS YEAR</p>
+		
+		<p id="Tlet">LET</p>
+		<p id="TNewtons">NEWTON'S</p>
+		<p id="TApple">APPLE</p>
+		<p id="TFall">FALL</p>
+		<p id="TOn">ON</p>
+		<p id="TYou">YOU</p>
+		
+		<p id="TThis-time">THIS TIME</p>
+		
+		<div id="T4">
+		<p id="TThink">THINK</p>
+		<p id="TThe">THE</p>
+		<p id="TUnthinkable">UNTHINKABLE</p>
+		</div>
+
+		<div id="T5">
+		<p id="TIdeate">IDEATE</p>
+		<p id="TSomething">SOMETHING</p>
+		<p id="TUnknown">UNKNOWN</p>
+		</div>
+
+		<div id="T6">
+		<p id="TFormulate">FORMULATE.</p>
+		<p id="TYour">YOUR.</p>
+		<p id="TOwn">OWN.</p>
+		<p id="TWorld">WORLD.</p>
+		</div>
+
+		<div id="T7">
+		<p id="TThis-time2">THIS TIME</p>
+		<p id="TEvolute">EVOLUTE</p>
+		<p id="TThrough">THROUGH</p>
+		<p id="TYour2">YOUR</p>
+		<p id="TIdeas">IDEAS</p>
+		</div>
+
+		<!-- <p id="TThis-year2">THIS YEAR</p>
+		<p id="TCelebrate">CELEBRATE</p>
+		<p id="TIntelligence">INTELLIGENCE</p>
+		<p id="TLeadership">LEADERSHIP</p>
+		<p id="TAnd">AND</p>
+		<p id="THardwork">HARDWORK</p> -->
+		
+		<div id="T8">
+		<p id="TThis-time3">THIS TIME</p>
+		<p id="TCatch">CATCH A STAR</p>
+		<p id="TAnd">AND</p>
+		<p id="TGo">GO</p>
+		</div>
+
+		</div>
+
+		<p id="Credits"> This intro part designed by : Bhavul Gauri </p>
+
+
+		<div id="justToCenter">
+		<button id="autoplay"> I don't want to scroll. Autoplay, please! </button>
+		</div>
+
+		<p id="scrolldet"></p>
+
+
+	<!-- Skrollr things  -->	
+		<script type="text/javascript" src="skrollr.stylesheets.js"></script> 	
+		<script type="text/javascript" src="skrollr.js"></script> 
+		<script type="text/javascript">
+			var s = skrollr.init({
+		    
+		});
+		</script>
+
+		<!-- Skrollr things end -->
+
+
+	</body>
+
+</html>

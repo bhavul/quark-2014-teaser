@@ -1,0 +1,33 @@
+#three {
+	
+	-skrollr-animation-name:animationThree;
+}
+
+@-skrollr-keyframes animationThree {
+	bottom-top{
+		background-color: (0, 80, 117);
+	}
+
+	center-top {
+		background-color: rgb(3, 132, 192);
+	}
+}
+
+#tagline {
+	-skrollr-animation-name:animationP;
+}
+
+@-skrollr-keyframes animationP {
+	0 {
+		opacity: 0;
+		top: 10%;
+		position: fixed;
+	}
+
+	100p {
+		opacity: 1;
+		position: fixed;
+		top: 10%;
+		z-index: 5;
+	}
+}
